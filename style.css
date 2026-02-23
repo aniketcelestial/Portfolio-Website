@@ -18,9 +18,19 @@ header {
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: 600;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 38px;
+    font-weight: 700;
     color: #ff4d4d;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-shadow: 0 0 10px #ff4d4d;;
+}
+
+.logo:hover {
+    transform: scale(1.05)
+    text-shadow: 0 0 20px #ff4d4d;
 }
 
 nav a {
@@ -113,6 +123,94 @@ nav a.active {
     box-shadow: 0 0 15px #ff4d4d;
 }
 
+.contact {
+    padding: 80px 8%;
+    min-height: 90vh;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-info h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.contact-info h1 span {
+    color:#ff4d4d;
+}
+
+.contact-info p {
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+.info-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.info-box i {
+    color: #ff4d4d;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+.conact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    background: #111;
+    border: 1px solid #333;
+    color: #fff;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #ff4d4d;
+    box-shadow: 0 0 10px #ff4d4d33;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #ff4d4d;
+    color: #000;
+    font-weight: 600;
+    border-radius: 30px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 0 25px #ff4d4d;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #000;
+    box-shadow: 0 0 25px #ff4d4d;
+    transform: scale(1.05);
+}
+
 @media (max-width: 1000px) {
     .hero {
         flex-direction: column;
@@ -122,4 +220,30 @@ nav a.active {
     .hero-img {
         margin-bottom: 40px;
     }
+}
+
+.project {
+    padding: 80px 8%;
+    min-height: 90vh;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.project-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.project-info h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.project-info h1 span {
+    color:#ff4d4d;
 }
